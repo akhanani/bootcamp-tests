@@ -8,7 +8,7 @@ describe('findItemsOver', function(){
 
 ];
 */
-it('should return the products that have  quantity higher than 20',function(){
+it(' return the products that have  quantity higher than 20',function(){
   var itemList = [
     {name : 'pears', qty : 37},
     {name : 'bananas', qty : 27}

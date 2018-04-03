@@ -1,5 +1,5 @@
 describe('countAllPaarl', function(){
-  it('should not give  count', function(){
+  it(' not give  count at all', function(){
    assert.equal(countAllPaarl('CJ'),true);
       });
       it('should  give count', function(){
