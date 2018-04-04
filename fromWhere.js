@@ -1,11 +1,13 @@
 function fromWhere (regNum){
-if (regNum == 'CY'){
+if (regNum.startsWith('CY')){
   return 'Bellville';
 
-}else if( regNum == 'CJ'){
+}
+else if( regNum.startsWith('CJ')){
   return 'Paarl';
-}else if (regNum == 'CA'){
+}else if (regNum.startsWith('CA')){
   return 'Cape Town';
-}else{ return 'Some other place!'};
+}else{
+  return 'Some other place!'};
 
 };
