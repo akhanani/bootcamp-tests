@@ -1,8 +1,8 @@
 describe('totalPhoneBill', function(){
-  it ('they must return R3.40', function(){
-   assert.equal(totalPhoneBill('call,sms'),'R0.00');
+  it ('they must return R4.00', function(){
+   assert.equal(totalPhoneBill('sms R2.65'),'R0.00');
   });
-  it ('should return R0.65', function(){
-  assert.equal(totalPhoneBill('call,sms'),'R0.00');
+  it ('should return R4.00', function(){
+  assert.equal(totalPhoneBill('call R0.65 '),'R0.00');
   });
 });

@@ -1,19 +1,24 @@
-function mostProfitableDepartment(salesData){
-var map = {}
-var max = 0;
- var name = '';
-  for( var i=0;i<salesData.length;i++){
-  var saleslist  = salesData[i];
-    if (map[saleslist.department] === undefined){
-    	map[saleslist.department]=0
-    }
-    map[saleslist.department] += saleslist.sales
-  }
-  for(var sos in map){
-  	if (map[sos]>max ){
-    max = map[sos]
-      name = sos
-    }
-  }
-  return name
-}
+//function mostProfitableDepartment(salesData){
+  var salesData = [
+    {department : 'hardware', sales : 4500, day : 'Monday'},
+    {department : 'outdoor', sales : 1500, day : 'Monday'},
+    {department : 'carpentry', sales : 5500, day : 'Monday'},
+    {department : 'hardware', sales : 7500, day : 'Tuesday'},
+    {department : 'outdoor', sales : 2505, day : 'Tuesday'},
+    {department : 'carpentry', sales : 1540, day : 'Tuesday'},
+    {department : 'hardware', sales : 1500, day : 'Wednesday'},
+    {department : 'outdoor', sales : 8507, day : 'Wednesday'},
+    {department : 'carpentry', sales : 8009, day : 'Wednesday'},
+    {department : 'hardware', sales : 12000, day : 'Thursday'},
+    {department : 'outdoor', sales : 18007, day : 'Thursday'},
+    {department : 'carpentry', sales : 6109, day : 'Thursday'},
+    {department : 'hardware', sales : 7005, day : 'Friday'},
+    {department : 'outdoor', sales : 12006, day : 'Friday'},
+    {department : 'carpentry', sales : 16109, day : 'Friday'},
+];
+
+describe('mostProfitableDepartment',function(){
+    it('should determine which of their department are most profitable',function(){
+          assert.equal(mostProfitableDepartment('salesData') ,'');
+    });
+});
