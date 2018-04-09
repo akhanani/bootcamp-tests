@@ -1,6 +1,6 @@
 
 function mostProfitableDepartment(salesData){
-var map = {}
+var map = {};
 var max = 0;
  var name = '';
   for( var i=0;i<salesData.length;i++){
