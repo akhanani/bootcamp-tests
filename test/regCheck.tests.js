@@ -1,9 +1,9 @@
 describe(' the regCheck function', function(){
 
-    it('should return incorrect reg number', function(){
+    it('should check that the regNum is incorrect', function(){
         assert.equal(regCheck('GP 986556', 'GP'),false);
     });
-    it(' return correct reg number', function(){
+    it(' should check that the regNum are correct', function(){
       assert.equal(regCheck('DV 23 NB GP', 'GP'),true);
     });
   /*  it('return regNumber.endsWith ', function(){

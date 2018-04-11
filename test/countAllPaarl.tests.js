@@ -1,8 +1,8 @@
 describe('countAllPaarl', function(){
-  it(' not give  count at all', function(){
-   assert.equal(countAllPaarl(' CL 123,CA 133'),0);
+  it('should return how many regNum from Paarl ', function(){
+   assert.equal(countAllPaarl('CL 124,CY 567,CL 345, CJ 456,CL 341'),1);
       });
-      it('should  give count', function(){
-         assert.equal( countAllPaarl (' CL 123'),0);
+      it('should return zero', function(){
+         assert.equal( countAllPaarl (' CL 123,CY 567,CL 345,CL 341'),0);
         });
   });
